@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="chronometer.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Stopwatch</h1>
+        <div class="time_display"> 
+            <div id="stopWatchDisplay" class="Stopwatch">
+                <div>
+                    <div class="time_label" id="hr_label">HR</div>
+                    <div class="time_label" id="min_label">MIN</div>
+                    <div class="time_label" id="sec_label">SEC</div>
+                </div>
+                <span class="time_digit_label" id="time_record">00 : 00 : 00</span>
+                <span class="milli_sec_label" id="milli_record"> . 000</span>
+            </div>
+        </div>
+             
+        <button id="button-start">Start</button>
+        <button id="button-reset" >Reset</button>
+
+        <div class="history-box">
+            <div class="history"> Time history <i class="fa fa-trash" id="clear" ></i></div>
+            <h2></h2>
+            <div class="Box">
+            <div class="time_history" id="word">ยังไม่มีเวลาที่บันทึก</div>
+            <div class="time_history" id="history_label"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
+
+<!--<button id="button-reset" onclick="addTask()">Reset</button> -->
